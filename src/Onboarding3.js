@@ -12,11 +12,13 @@ const Onboarding2 = ({navigation}) => {
         This app contains:{'\n'}(Assess your Health Risks)</Text>
 
 
-      {/* Logo 
-      <Image 
-        source={require('../assets/health_kundli_logo.png')} // Ensure you have this image in your assets folder
-        className="w-24 h-24 mb-6"
-      />*/}
+      {/* Logo */}
+      <Image
+        source={require('../assets/logo.png')}
+        resizeMode="stretch"
+        className="h-30 w30 mb-6 mt-10 "/>
+
+
 
       {/* Buttons: Skip and Next */}
       <TouchableOpacity className="absolute bottom-0 mb-8 w-full bg-cyan-500 px-6 py-3 rounded-full"

@@ -9,12 +9,11 @@ const Language = ({ navigation }) => {
 
   return (
     <View className="flex-1 items-center justify-center bg-white p-6">
-      {/* Logo 
       <Image
-        source={require('./assets/healthkundli.png')} // Replace with your logo path
-        className="w-32 h-32 mb-6"
-        resizeMode="contain"
-      /> */}
+        source={require('../assets/logo.png')}
+        resizeMode="stretch"
+        className="h-30 w30 mb-6 mt-10 "/>
+
 
       {/* Title */}
       <Text className="text-xl font-bold text-black mb-8">Select language</Text>

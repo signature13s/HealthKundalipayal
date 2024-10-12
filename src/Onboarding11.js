@@ -1,0 +1,35 @@
+import React from 'react';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
+import {styled} from 'nativewind';
+
+const Onboarding11 = ({navigation}) => {
+  return (
+    <View className="flex-1 bg-gray-100 justify-center items-center p-4">
+      {/* Title */}
+      <Text className="absolute top-0 text-center mt-10 text-3xl font-bold text-gray-700 ">
+        And many more
+      </Text>
+
+      <Image
+        source={require('../assets/logo.png')}
+        resizeMode="stretch"
+        className="h-30 w30 mb-6 mt-10 "/>
+
+
+      {/* Buttons: Skip and Next */}
+      <TouchableOpacity
+        className="absolute bottom-0 mb-8 w-full bg-cyan-500 px-6 py-3 rounded-full"
+        onPress={() => navigation.navigate('Login')}>
+        <Text className="text-center text-white">Done</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        className="absolute bottom-0 mb-20 absolute left-0 ml-8  px-4 py-1.5 rounded-full"
+        onPress={() => navigation.navigate('Onboarding10')}>
+        <Text className="text-gray-700"> Previous</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+export default Onboarding11;

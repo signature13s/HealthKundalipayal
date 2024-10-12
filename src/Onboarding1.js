@@ -1,17 +1,17 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image } from 'react-native';
-import { styled } from 'nativewind';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
+
 
 // Assuming the logo is in your assets folder
 const Onboarding1 = ({ navigation }) => {
   return (
     <View className="flex-1 items-center justify-center bg-white p-6">
       {/* Logo */}
-      {/*<Image
-        source={require('./assets/healthkundli.png')} // Path to your logo image
-        className="w-48 h-48 mb-6"
-        resizeMode="contain"
-      /> *}
+     <Image
+        source={require('../assets/logo.png')}
+        resizeMode="stretch"
+        className="h-30 w-30 mb-6 mt-10 "/>
+
 
       {/* Title */}
       <Text className="text-lg text-center font-bold text-black mb-10">
