@@ -19,6 +19,10 @@ import Onboarding11 from './src/Onboarding11';
 import Assessment from './src/Assessment';
 import DiseaseList from './src/DiseaseList';
 import Occupation from './src/Occupation';
+import Home from './src/Home';
+import MyAccount from './src/MyAccount';
+import Others from './src/Others';
+import Welcome from './src/Welcome';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -42,6 +46,10 @@ const App = () => {
         <Stack.Screen name='Assessment' component={Assessment} />
         <Stack.Screen name='DiseaseList' component={DiseaseList} />
         <Stack.Screen name='Occupation' component={Occupation} />
+        <Stack.Screen name='Home' component={Home} />
+        <Stack.Screen name='MyAccount' component={MyAccount} />
+        <Stack.Screen name='Others' component={Others} />
+        <Stack.Screen name='Welcome' component={Welcome} />
 
       </Stack.Navigator>
     </NavigationContainer>

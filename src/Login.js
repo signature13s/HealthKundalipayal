@@ -39,7 +39,7 @@ const Login = ({navigation}) => {
 
           <TouchableOpacity className="w-full bg-cyan-500 px-6 py-3 rounded-lg">
             <Text className="text-center text-white"
-            onPress={() => navigation.navigate("Assessment")}>
+            onPress={() => navigation.navigate("Welcome")}>
               Log in</Text>
           </TouchableOpacity>
         </View>

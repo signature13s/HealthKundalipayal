@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, TextInput, TouchableOpacity} from 'react-native';
-import {styled} from 'nativewind';
+//import {styled} from 'nativewind';
 
 const Register = ({navigation}) => {
   const [passwordVisible, setPasswordVisible] = useState(false);
